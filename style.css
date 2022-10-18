@@ -204,7 +204,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-.icome__title { 
+.income__title { 
     color: #28B9B5; 
 }
 
@@ -307,4 +307,39 @@ h2 {
 
 .unpaid:hover .item__description { 
     font-weight: 900; 
+}
+
+@media screen  and (max-width: 480px){
+    .add {
+        padding: 4px;
+    }
+    
+    .add__description {
+        width: 300px;
+    }
+
+    .add__type, .add__value {
+        width: 150px;
+        margin: auto;
+    }
+
+    .add__btn{
+        margin-left: 0;
+    }
+
+    .container{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .income{
+        height: 80vh;
+        width: auto;
+    }
+
+    .expenses{
+        height: 80vh;
+        width: auto;
+    }
 }
