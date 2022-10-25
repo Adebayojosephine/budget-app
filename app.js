@@ -1,4 +1,3 @@
-
 //This is a module, It's an immediately invoked function expression(IIFE) that returns an object
 //We're using an IIFE here because it allows data privacy, so our scope can not be accessed by an outside scope
 //Budget Controller - controls the budget
@@ -128,7 +127,7 @@ let budgetController = (function() {
         },
 
         testing: function() {
-            console.group(data);
+            console.log(data);
         }
     };
 })();
@@ -192,11 +191,11 @@ let UIController = (function() {
             if(type === 'inc') {
                 element = DOMstrings.incomeContainer;
 
-                html = '<div class="item clearfix" id="inc-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>'
+                html = '<div class="item clearfix" id="inc-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><i class="fa-solid fa-xmark"></i></button></div></div></div>'
             } else if(type === 'exp') {
                 element = DOMstrings.expensesContainer;
 
-                html = '<div class="item clearfix" id="exp-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>'
+                html = '<div class="item clearfix" id="exp-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="fa-solid fa-xmark"></i></button></div></div></div>'
             }
 
             //2. Replace the placeholder test with actual data, i.e. data received from the object
